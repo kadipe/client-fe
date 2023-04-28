@@ -1,0 +1,47 @@
+/* 
+# Google Font
+font-family: 'Open Sans', sans-serif;
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
+Ex: font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--p-text-black);
+
+# Dark pallete
+https://colorhunt.co/palette/2c3333395b64a5c9cae7f6f2
+*/
+
+/* Vartiables */
+:root {
+    --p-color-background: #ffffff;
+    --p-color-primary: #2ec4b6;
+    --p-color-second: #ffbf69;
+    --p-color-destak: #ff9f1c;
+    --p-color-light: #cbf3f0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--p-color-background);
+    height: 100%;
+    width: 100%;
+}
+
+/* Google Icons */
+.material-symbols-outlined {
+    color: var(--p-label-black);
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 600,
+        'GRAD' 0,
+        'opsz' 48
+}

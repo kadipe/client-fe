@@ -1,0 +1,7 @@
+// Preload
+//export const HOME_CATEGORY_START = 'HOME_CATEGORY_START'
+//export const HOME_CATEGORY_ERROR = 'HOME_CATEGORY_ERROR'
+//export const HOME_CATEGORY_SUCCESS = 'HOME_CATEGORY_SUCCESS'
+
+// Validate Code
+export const VALIDATE_CODE = 'VALIDATE_CODE'
