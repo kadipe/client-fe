@@ -1,4 +1,4 @@
-import { VALIDATE_CODE } from '../action/ActionTypes'
+import { VALIDATE_CODE } from '../action/action-types'
 
 export function validateCode(state = {}, action) {
     switch (action.type) {

@@ -6,8 +6,9 @@ import { Routes, Route } from "react-router-dom";
 
 import './i18n';
 import confStore from './store/conf-store';
-import HomePage from './page/HomePage';
-import ErrorPage from './page/ErrorPage';
+import HomePage from './page/home-page';
+import ErrorPage from './page/error-page';
+import LoginPage from './page/login-page';
 
 const store = confStore()
 
@@ -20,6 +21,7 @@ root.render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/login" element={<LoginPage />} />
           <Route path="/error" element={<ErrorPage />} />
           <Route path="*" element={<HomePage />} />
         </Routes>
