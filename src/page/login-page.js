@@ -43,7 +43,6 @@ const LoginPage = (props) => {
       <button type="submit" onClick={handleKadipe}>
         <span>Login as Kadipe</span>
       </button>
-
     </>
   )
 }
