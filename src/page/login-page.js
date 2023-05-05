@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { makeLogin } from '../service/user-service'
 
-const LoginPage = (props) => {
+const LoginPage = () => {
 
   const [data, setData] = useState({
     mail: '',
@@ -30,7 +30,7 @@ const LoginPage = (props) => {
   }
 
   const handleKadipe = () => {
-    
+    window.location.href = 'http://localhost:2000/login.oauth?code=9ac7f411-7c40-439a-b794-66ad16476db8&redirect_uri=http://localhost:2001/login.oauth'
   }
 
   return (

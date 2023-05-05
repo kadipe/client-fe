@@ -17,7 +17,7 @@ export async function makeLogin(userName, password) {
 
 export async function generateToken(code, state) {
 
-  const response = await fetch(`${process.env.REACT_APP_BE_URL}/user/api/v1/token.oauth`, {
+  const response = await fetch(`${process.env.REACT_APP_BE_URL}/user/api/v1/login.oauth`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
