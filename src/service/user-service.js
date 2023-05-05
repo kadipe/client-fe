@@ -14,3 +14,20 @@ export async function makeLogin(userName, password) {
 
   return await response.json()
 }
+
+export async function generateToken(code, state) {
+
+  const response = await fetch(`${process.env.REACT_APP_BE_URL}/user/api/v1/token.oauth`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'X-KDP-TZ': Intl.DateTimeFormat().resolvedOptions().timeZone
+    },
+    body: JSON.stringify({
+      'code': code,
+      'state': state
+    })
+  })
+
+  return await response.json()
+}
