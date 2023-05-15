@@ -31,3 +31,16 @@ export async function generateToken(code, state) {
 
   return await response.json()
 }
+
+export async function makeCheckin(code) {
+
+  const response = await fetch(`${process.env.REACT_APP_BE_URL}/checkin/api/v1/kadipe/${code}`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+      'X-KDP-TZ': Intl.DateTimeFormat().resolvedOptions().timeZone
+    }
+  })
+
+  return await response
+}
