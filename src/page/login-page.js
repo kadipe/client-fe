@@ -30,7 +30,7 @@ const LoginPage = () => {
   }
 
   const handleKadipe = () => {
-    window.location.href = 'http://localhost:2000/login.oauth?code=9ac7f411-7c40-439a-b794-66ad16476db8&redirect_uri=http://localhost:2001/login.oauth'
+    window.location.href = 'http://localhost:2000/login.oauth?code=61b6fc13-2656-405b-b33a-8bfe34434e52&redirect_uri=http://localhost:2001/login.oauth'
   }
 
   return (
