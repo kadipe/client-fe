@@ -18,18 +18,16 @@ const container = document.getElementById('app')
 const root = createRoot(container)
 
 root.render(
-  <StrictMode>
-    <Provider store={store}>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/login.oauth" element={<LoginOAuthPage />} />
-          <Route path="/checkin" element={<CheckinPage />} />
-          <Route path="/error" element={<ErrorPage />} />
-          <Route path="*" element={<HomePage />} />
-        </Routes>
-      </BrowserRouter>
-    </Provider>
-  </StrictMode>
+  <Provider store={store}>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/login.oauth" element={<LoginOAuthPage />} />
+        <Route path="/checkin" element={<CheckinPage />} />
+        <Route path="/error" element={<ErrorPage />} />
+        <Route path="*" element={<HomePage />} />
+      </Routes>
+    </BrowserRouter>
+  </Provider>
 )

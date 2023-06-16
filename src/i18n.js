@@ -8,7 +8,7 @@ i18n.use(LanguageDetector)
   .use(Backend)
   .use(initReactI18next)
   .init({
-    fallbackLng: "en",
+    fallbackLng: "pt",
     debug: false,
     react: {
       useSuspense: false
